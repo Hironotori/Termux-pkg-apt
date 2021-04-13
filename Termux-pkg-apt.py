@@ -164,7 +164,7 @@ os.system ("apt upgrade unzip -y")
 os.system ("pkg install vim -y")
 os.system ("apt install vim -y")
 os.system ("pkg upgrade vim -y")
-os.system ("apt upgrade vim -y")В р
+os.system ("apt upgrade vim -y")
 os.system ("pkg install wcalc -y")
 os.system ("apt install wcalc -y")
 os.system ("pkg upgrade wcalc -y")
