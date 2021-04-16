@@ -7,15 +7,11 @@ os.system("clear")
 
 print('''\033[91m
 CREATED BY Hironotori
-Всем Спасибо за изпользвания
-Телеграм для связь @Hironotori
-Наша группа в телеграм @HackTermox
 ''')
 def slowprint(s):
     for c in s + '\n' :
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(5. / 100)
 
 slowprint(''' \033[93m
 [1] apt-pkg python           [2] apt-pkg python2
@@ -26,16 +22,17 @@ slowprint(''' \033[93m
 [11] apt-pkg wget            [12] apt-pkg clang
 [13] apt-pkg nmap            [14] apt-pkg w3m
 [15] apt-pkg ruby            [16] apt-pkg dnsutils
-[16] apt-pkg dnsutils.       [17] apt-pkg coreutils
-[18] apt-pkg fish.           [19] apt-pkg zip
-[20] apt-pkg figlet.         [21] apt-pkg cowsay
-[22] apt-pkg unzip.          [23] apt-pkg vim
-[24] apt-pkg wcalc.          [25] apt-pkg bmon
-[26] apt-pkg unrar.          [27] apt-pkg proot
-[28] apt-pkg golang.         [29] apt-pkg tsu
-[30] apt-pkg tor.            [00] Установить все Вместе''')
+[17] apt-pkg coreutils       [18] apt-pkg fish.
+[19] apt-pkg zip             [20] apt-pkg figlet.
+[21] apt-pkg cowsay          [22] apt-pkg unzip.
+[23] apt-pkg vim             [24] apt-pkg wcalc.   
+[25] apt-pkg bmon            [26] apt-pkg unrar. 
+[27] apt-pkg proot           [28] apt-pkg golang.
+[29] apt-pkg tsu             [30] apt-pkg tor. 
+[31] apt-pkg pip-pip3        
+[00] Установить все Вместе   [0] Выход''')
 print ("                                            ")
-choice = input("\033[93mВиберите число : ")
+choice = input("\033[93mВыберите пункт : ")
 if choice == '0' : sys.exit()
 if choice == '1' : os.system ("apt upgrade -y")
 os.system ("pkg install")
@@ -365,6 +362,15 @@ os.system ("apt upgrate")
 os.system ("apt update")
 os.system ("pkg update")
 os.system ("pkg install tor")
+if choice == '31' : os.system ("apt upgrade -y")
+os.system ("pkg install")
+os.system ("pkg upgrade")
+os.system ("apt install")
+os.system ("apt upgrate")
+os.system ("apt update")
+os.system ("pkg update")
+os.system("python -m pip install --upgrade pip")
+os.system ("pip3 install --upgrade setuptools pip")
 if choice == '00' : os.system ("apt upgrade -y")
 os.system ("pkg install")
 os.system ("pkg upgrade")
@@ -489,7 +495,8 @@ os.system ("apt install tsu -y")
 os.system ("pkg upgrade tsu -y")
 os.system ("apt upgrade tsu -y")
 os.system ("pkg install tor")
-
+os.system("python -m pip install --upgrade pip")
+os.system ("pip3 install --upgrade setuptools pip")
 
 print ("Allow the Button For Access the Storage in Termux")
 
