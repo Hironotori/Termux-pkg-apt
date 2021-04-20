@@ -14,8 +14,8 @@ def slowprint(s):
         sys.stdout.flush()
 
 slowprint(''' \033[93m
-[1] apt-pkg python           [2] apt-pkg python2
-[3] apt-pkg php              [4] apt-pkg bash
+[1] apt-pkg pip-pip3         [2] apt-pkg python
+[3] apt-pkg python2          [4] apt-pkg bash
 [5] apt-pkg git              [6] apt-pkg perl
 [7] apt-pkg nano             [8] apt-pkg curl
 [9] apt-pkg openssl          [10] apt-pkg openssh
@@ -29,7 +29,7 @@ slowprint(''' \033[93m
 [25] apt-pkg bmon            [26] apt-pkg unrar. 
 [27] apt-pkg proot           [28] apt-pkg golang.
 [29] apt-pkg tsu             [30] apt-pkg tor. 
-[31] apt-pkg pip-pip3        
+[31] apt-pkg php          
 [00] Установить все Вместе   [0] Выход''')
 print ("                                            ")
 choice = input("\033[93mВыберите пункт : ")
@@ -41,11 +41,20 @@ os.system ("apt install")
 os.system ("apt upgrade")
 os.system ("apt update")
 os.system ("pkg update")
+os.system("python -m pip install --upgrade pip")
+os.system ("pip3 install --upgrade setuptools pip")
+if choice == '2' : os.system ("apt upgrade -y")
+os.system ("pkg install")
+os.system ("pkg upgrade")
+os.system ("apt install")
+os.system ("apt upgrade")
+os.system ("apt update")
+os.system ("pkg update")
 os.system ("pkg install python -y")
 os.system ("pkg upgrade python -y")
 os.system ("apt install python -y")
 os.system ("apt upgrade python -y")
-if choice == '2' : os.system ("apt upgrade -y")
+if choice == '3' : os.system ("apt upgrade -y")
 os.system ("pkg install")
 os.system ("pkg upgrade")
 os.system ("apt install")
@@ -56,17 +65,6 @@ os.system ("pkg install python2 -y")
 os.system ("pkg upgrade python2 -y")
 os.system ("apt install python2 -y")
 os.system ("apt upgrade python2 -y")
-if choice == '3' : os.system ("apt upgrade -y")
-os.system ("pkg install")
-os.system ("pkg upgrade")
-os.system ("apt install")
-os.system ("apt upgrade")
-os.system ("apt update")
-os.system ("pkg update")
-os.system ("pkg install php -y")
-os.system ("pkg upgrade php -y")
-os.system ("apt install php -y")
-os.system ("apt upgrade php -y")
 if choice == '4' : os.system ("apt upgrade -y")
 os.system ("pkg install")
 os.system ("pkg upgrade")
@@ -199,7 +197,6 @@ os.system ("pkg install ruby -y")
 os.system ("apt install ruby -y")
 os.system ("pkg upgrade ruby -y")
 os.system ("apt upgrade ruby -y")
-
 if choice == '16' : os.system ("apt upgrade -y")
 os.system ("pkg install")
 os.system ("pkg upgrade")
@@ -369,8 +366,10 @@ os.system ("apt install")
 os.system ("apt upgrate")
 os.system ("apt update")
 os.system ("pkg update")
-os.system("python -m pip install --upgrade pip")
-os.system ("pip3 install --upgrade setuptools pip")
+os.system ("pkg install php -y")
+os.system ("pkg upgrade php -y")
+os.system ("apt install php -y")
+os.system ("apt upgrade php -y")
 if choice == '00' : os.system ("apt upgrade -y")
 os.system ("pkg install")
 os.system ("pkg upgrade")
@@ -378,6 +377,8 @@ os.system ("apt install")
 os.system ("apt upgrate")
 os.system ("apt update")
 os.system ("pkg update")
+os.system("python -m pip install --upgrade pip")
+os.system ("pip3 install --upgrade setuptools pip")
 os.system ("pkg install python -y")
 os.system ("pkg upgrade python -y")
 os.system ("apt install python -y")
@@ -495,9 +496,6 @@ os.system ("apt install tsu -y")
 os.system ("pkg upgrade tsu -y")
 os.system ("apt upgrade tsu -y")
 os.system ("pkg install tor")
-os.system("python -m pip install --upgrade pip")
-os.system ("pip3 install --upgrade setuptools pip")
-
 print ("Allow the Button For Access the Storage in Termux")
 
 
