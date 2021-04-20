@@ -50,7 +50,7 @@ host
 
 # Termux
 
-$ pkg upgrade
+$ apt update && apt upgrade
 
 $ apt install git 
 
